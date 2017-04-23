@@ -4,6 +4,7 @@ const VideoDetail = ({video}) => {
   if(!video){
     return <div>Loading some shit...</div>
   }
+  //only show loading spinner on a high level component 
 
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
